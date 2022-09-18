@@ -17,16 +17,16 @@
     overflow: hidden;
 }
 .slider1{
-    animation: slide1 12s linear infinite;
+    animation: slide1 12s linear infinite
 }
 .slider2{
-    animation: slide2 12s linear infinite;
+    animation: slide2 12s linear infinite
 }
 .slider3{
-    animation: slide3 12s linear infinite;
+    animation: slide3 12s linear infinite
 }
 .slider4{
-    animation: slide4 12s linear infinite;
+    animation: slide4 12s linear infinite
 }
 @keyframes slide1 {
     0%{
