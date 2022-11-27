@@ -1,112 +1,143 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 80%;
     height: 80vh;
     margin: 3em auto;
     position: relative;
 }
 
-.slider1, .slider2, .slider3, .slider4{
+.slider1,
+.slider2,
+.slider3,
+.slider4 {
     width: 100%;
     height: 100%;
     position: absolute;
     overflow: hidden;
 }
-.slider1{
+
+.slider1 {
     animation: slide1 12s linear infinite
 }
-.slider2{
+
+.slider2 {
     animation: slide2 12s linear infinite
 }
-.slider3{
+
+.slider3 {
     animation: slide3 12s linear infinite
 }
-.slider4{
+
+.slider4 {
     animation: slide4 12s linear infinite
 }
+
 @keyframes slide1 {
-    0%{
+    0% {
         visibility: visible;
     }
-    25%{
+
+    25% {
         visibility: hidden;
     }
-    50%{
+
+    50% {
         visibility: hidden;
     }
-    75%{
+
+    75% {
         visibility: hidden;
     }
-    100%{
+
+    100% {
         visibility: visible;
     }
 }
+
 @keyframes slide2 {
-    0%{
+    0% {
         visibility: hidden;
     }
-    25%{
+
+    25% {
         visibility: hidden;
     }
-    50%{
+
+    50% {
         visibility: visible;
     }
-    75%{
+
+    75% {
         visibility: hidden;
     }
-    100%{
+
+    100% {
         visibility: hidden;
     }
 }
+
 @keyframes slide3 {
-    0%{
+    0% {
         visibility: hidden;
     }
-    25%{
+
+    25% {
         visibility: hidden;
     }
-    50%{
+
+    50% {
         visibility: hidden;
     }
-    75%{
+
+    75% {
         visibility: visible;
     }
-    100%{
+
+    100% {
         visibility: hidden;
     }
 }
+
 @keyframes slide4 {
-    0%{
+    0% {
         visibility: hidden;
     }
-    25%{
+
+    25% {
         visibility: hidden;
     }
-    50%{
+
+    50% {
         visibility: hidden;
     }
-    75%{
+
+    75% {
         visibility: hidden;
     }
-    100%{
+
+    100% {
         visibility: visible;
     }
 }
-img{
+
+img {
     width: 120%;
     position: absolute;
     animation: zoom-out 3s linear infinite;
 }
+
 @keyframes zoom-out {
-    100%{
+    100% {
         width: 100%;
     }
 }
-.info{
+
+.info {
     position: absolute;
     width: 40%;
     bottom: 50px;
@@ -115,21 +146,25 @@ img{
     transform: translateY(100px);
     animation: textup 3s linear infinite;
 }
+
 @keyframes textup {
-    10%{
+    10% {
         transform: translateY(0px);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
     }
 }
-.divde{
+
+.divde {
     height: 1px;
     width: 100px;
     margin: 1em 0;
     background-color: red;
 }
-.btn{
+
+.btn {
     padding: 5px 1em;
     background-color: orangered;
     color: white;
@@ -138,8 +173,8 @@ img{
     margin-top: 10px;
 }
 
-@media screen and (max-width: 800px){
-    .info{
+@media screen and (max-width: 800px) {
+    .info {
         position: absolute;
         padding: 1em;
         width: 100%;
@@ -148,12 +183,14 @@ img{
         text-align: center;
         transform: translateY(90px);
     }
-    .divde{
-        margin:.6em auto;
+
+    .divde {
+        margin: .6em auto;
     }
 }
-@media screen and (max-width: 600px){
-    .info{
+
+@media screen and (max-width: 600px) {
+    .info {
         position: absolute;
         padding: 1em;
         width: 100%;
@@ -162,7 +199,8 @@ img{
         text-align: center;
         transform: translateY(90px);
     }
-    .divde{
-        margin:.6em auto;
+
+    .divde {
+        margin: .6em auto;
     }
 }
